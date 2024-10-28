@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.divs{
+color:black;padding:10px;width:12%;text-align:center;background-color:#FFE202;transition: all 0.5s ease;
+}
+.divs:hover
+{
+cursor:pointer;
+background-color:rgba(255,255,255,0.5);
+}
+#main{
+width:100%;
+height:90%;
+background-image:url('https://static.vecteezy.com/system/resources/previews/007/355/263/non_2x/abstract-green-gradient-with-dynamic-shape-background-free-vector.jpg');
+background-repeat:no-repeat;
+background-size:100% 100%;
+padding:0px;
+margin:0px;
+background-attachment:fixed;
+display:flex;
+flex-direction:column;
+
+justify-content:space-between;
+}
+#navbar{
+background-color:#FFE202;
+width:100%;
+color:black;
+height:45px;
+display:flex;
+flex-direction:row-reverse;
+padding:0px;
+gap:0px;
+width:100%;
+max-width:100%;
+
+}
+#BODY{
+display:flex;
+width:100%;
+color:white;
+height:90%;
+margin:0px;
+flex-direction:column;
+justify-content:space-between;
+
+}
+#name{
+color:black;margin-left:0px;padding:10px;width:40%;padding-left:30px;margin-right:150px}
+#bdivs1{
+width:100%;height:90%;
+display:flex;
+flex-direction:column;
+margin:0px;
+
+
+
+
+}
+
+#image{
+margin-right:-300px;
+border-style:solid;
+border-color:Yellow;
+border-width:5px;
+border-radius:15000px;
+outline:
+}
+.ddivs{
+width:75%;
+height:300px;
+
+}
+#container2{
+display:flex;
+flex-direction:row;
+margin-top:-30px;
+}
+.ddivs1{
+padding:15px;
+margin-top:-10px;
+border: 3px solid green;
+border-radius: 25px;
+transition: all 0.3s ease;  
+}
+
+.ddivs1:hover{
+cursor: pointer;
+transform: scale(1.5);  
+
+}
+#MYPROJECTS{
+background-color:rgba(135,163,44,0.42);
+margin-top:100px;
+height:100px;
+display:flex;
+flex-direction:column;
+font-size:30px;
+text-align:center;
+width:100%;
+max-width:100%;
+}
+#projects{
+display:flex;
+flex-direction:row;
+justify-content:space-around;
+margin-top:25px;
+width:100%;
+max-width:100%;
+
+}
+#displayText{
+height:75%;
+font-size:25px;
+transition: all 0.3s ease;
+width:100%;
+max-width:100%;
+}
+#contact{
+background-color:black;
+color:white;
+display:flex;
+flex-direction:row;
+align-self:baseline;
+width:100%;
+max-width:100%;
+align:bottom;
+padding-top:10px;
+padding-bottom:10px;
+justify-content:left;
+
+}
+#Contain{
+display:flex;
+flex-direction:row;
+gap:0px 0px;
+justify-content:right;
+}
+#image1{
+width:25%;
+}
+#image2{
+width:25%;
+}
+#image3{
+width:25%;
+}
+#image4{
+width:25%;
+}
+
+</style>
+</HEAD>
+<BODY id="main">
+<DIV id="navbar">
+<DIV class="divs"><a href="C:\Data\Learning\website\Finaltestimonials.html">Review</a></DIV>
+<DIV class="divs"><a href="C:\Data\Learning\website\all About Me.html">About_Me</a></DIV>
+<DIV class="divs"><a href="C:\Data\Learning\website\MYprojects.html">My projects</a></DIV>
+<DIV class="divs"><a href="C:\Data\Learning\website\Myskills2.html">My skills</a></DIV>
+<DIV class="divs"><a href="C:\Data\Learning\website\co-curiculars.html">Co-curriculars</a></DIV>
+<DIV class="divs"><a href="C:\Data\Learning\website\index3.html">Home</a></DIV>
+
+<DIV id="name">PALAK PRAJAPATI</DIV>
+</DIV>
+<DIV id="BODY">
+<DIV style="font-size:70px;color:black;text-align:center;padding-top:45px;height:80px;margin-bottom:20px;">MY PROJECTS</DIV>
+<DIV style="font-size:24px;color:black;text-align:center;padding-top:20px;height:100px;margin-top:50px;margin-right:30px;margin-left:30px;">I have done a total of 3 projects till now. I am highly interested in AI ML domain, and I look forward to carry on projects related to AI-ML.</DIV>
+</DIV>
+
+<DIV id="MYPROJECTS"><DIV id="projects">
+<DIV onclick="displayText('<BR>This project was done for  a competition organised by Drishti-Grand Robo Pix. A line follower robot is a mobile robot designed to autonomously follow a predefined line on the ground. For this project we used IR sensors, PCB, Arduino, Solder wire and Machine, etc. We considered many of the possibilities which the bot can encounter. The Arduino will receive input from sensors and based on the sensor condition the case is decided, and the bot moves accordingly when output is given to the motor pins. <BR><BR>We can divide the project into three parts:<BR>Coding,<BR>Circuit designing,<BR> Assembling the bot.<BR><BR>We coded the arduino in C in the Arduino IDE software. ');showimage('photo 1 upper side.jpg','photo 2 lower side.jpg','Picture1.jpg','Picture2.jpg',35)">Line follower</DIV>
+
+<DIV onclick="displayText('<BR>Revolutionizing Healthcare: AI-Driven Disease Classifier <BR><BR>We dove headfirst into the exciting world of AI and built CureGPT for Makernova which is a recruitment process for Drishti, an AI-based disease classifier. This machine learning-based solution classifies diseases based on symptoms. We are aiming to assist doctors and patients with accurate diagnoses and treatment suggestions. With a model accuracy of 85.8%, we are feeling pretty proud! But we did not stop there, we also developed a web interface that allows users to interact with the model and access their history for better insights and tracking!<BR><BR>Project Timeline:<BR><BR>Phase1: Data collection and cleaning:<BR>Our comprehensive dataset includes: 250,000 rows of data, 339 symptoms, 773 diseases. We used Pandas for dataset cleaning.<BR><BR>Phase2: Model Selection and training:<BR>We used Random forest Classifier to implement this project.<BR>Training based on evaluation metrics like F1-score, accuracy and precision. We applied Cross Validation Techniques like k-fold, stratified k-fold, etc to reduce the overfitting issues.<BR>Hyperparameter tuning done through Grid Search CV.<BR><BR>Phase3: Web interface development:<BR>User-friendly Interface: We have designed a simple web interface for easy and smooth interaction.<BR>User Login & Chat History: Secure login with access to your chat history for better insights and tracking.');showimage('https://media.licdn.com/dms/image/v2/D5622AQEgricZa97j2Q/feedshare-shrink_800/feedshare-shrink_800/0/1728491210659?e=1732752000&v=beta&t=rBPwCP2pIiUPedxev21WXf481gFYu8CrbIuAdvvPWa8' ,'https://media.licdn.com/dms/image/v2/D5622AQG5CwjOLsKCLw/feedshare-shrink_800/feedshare-shrink_800/0/1728491210417?e=1732752000&v=beta&t=QWV6W6mQFxkbNZXQ7bp7eTal_c4HKkMcgOi8ibyEJDo', 'https://media.licdn.com/dms/image/v2/D5622AQHK2eLQ03gghw/feedshare-shrink_800/feedshare-shrink_800/0/1728491210381?e=1732752000&v=beta&t=_mnuzMf0YZK_ShGPflJkD2VVJOex3CVWce5bxSvXt-w', 'Screenshot 2024-10-23 143941.png',20)">CUREGPT</DIV>
+
+<DIV onclick="displayText('<BR>The road map which I followed to develop this website is:<BR><BR> Basics of Web Development<BR> 1.HTML   :<BR> Structure of a webpage, elements, tags, attributes.<BR> Semantic HTML, forms, tables, and accessibility.<BR> Projects: Basic landing page, portfolio website.<BR><BR> 2 CSS  : <BR>Selectors, box model, positioning , flexbox, grid.<BR> Responsive design with media queries, CSS animations, transitions.<BR> <BR>Learning Javascript .<BR><BR><BR>To implement this first I had designed all the web pages in figma and then started coding');showimage('Screenshot 2024-10-28 162803.png','Screenshot 2024-10-28 162821.png','Screenshot 2024-10-28 162901.png','Screenshot 2024-10-28 162929.png',20)">Portfolio Website</DIV>
+
+</div>
+
+</div>
+<DIV id="Contain">
+
+<DIV id="image1"><img src="file:///C:/Data/Learning/website/photo%201%20upper%20side.jpg" width ='100%' height='100%'></DIV>
+<DIV id="image2"><img src="file:///C:/Data/Learning/website/photo 2 lower side.jpg" width ='100%' height='100%'></DIV>
+<DIV id="image3"><img src="file:///C:/Data/Learning/website/Picture1.jpg" width ='100%' height='100%'></DIV>
+<DIV id="image4"><img src="file:///C:/Data/Learning/website/Picture2.jpg" width ='100%' height='100%'></DIV>
+</DIV><DIV style="background-color:rgba(68,147,67,0.55);padding-bottom:25px;width:100%">
+<DIV id="displayText" style="width:96%;margin-left:2%;" ><BR>This project was done for  a competition organised by Drishti-Grand Robo Pix. A line follower robot is a mobile robot designed to autonomously follow a predefined line on the ground. For this project we used IR sensors, PCB, Arduino, Solder wire and Machine, etc. We considered many of the possibilities which the bot can encounter. The Arduino will receive input from sensors and based on the sensor condition the case is decided, and the bot moves accordingly when output is given to the motor pins. <BR><BR>We can divide the project into three parts:<BR>Coding,<BR>Circuit designing,<BR> Assembling the bot.<BR><BR>We coded the Arduino in C in the Arduino IDE software.</DIV></DIV>
+ <script>
+        function displayText(text) {
+            document.getElementById("displayText").innerHTML = text;
+        }
+        function showimage(image1,image2,image3,image4,x) {
+            document.getElementById("image1").innerHTML ="<img src='" + image1 + "' alt='Image' width ='100%' height='100%'>";
+            document.getElementById("image2").innerHTML ="<img src='" + image2 + "' alt='Image' width ='100%' height='100%'>";
+            document.getElementById("image3").innerHTML ="<img src='" + image3 + "' alt='Image' width ='100%' height='100%'>";
+            document.getElementById("image4").innerHTML ="<img src='" + image4 + "' alt='Image' width ='100%' height='100%'>";
+            document.getElementById("Contain").height="" + x + "%";
+        }
+
+    </script>
+<DIV id="contact">Email:palak.XX.prajapati@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ph:87938935XX &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/palak-prajapati-94bb58297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa fa-linkedin-square" aria-hidden="true" style=";margin-right:10px;color:white;"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/palakprajapati750?igsh=eTN0cDM3ZmwyZnhv"><i class="fa fa-instagram" aria-hidden="true" style="margin-right:10px;color:white;"></i></a></DIV>
+</BODY>
+</HTML>
