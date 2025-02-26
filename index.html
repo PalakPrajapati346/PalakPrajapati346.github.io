@@ -2,10 +2,11 @@
 <HEAD>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/font-awesome.min.css">
 <style>
 
 .divs{
-color:black;padding:10px;width:12%;text-align:center;background-color:#FFE202;transition: all 0.5s ease;
+color:black;padding-bottom:10px;padding-top:10px;width:100%;text-align:center;background-color:#FFE202;transition: all 0.5s ease;font-size:90%;margin-top:0px;
 }
 .divs:hover
 {
@@ -15,7 +16,6 @@ background-color:rgba(255,255,255,0.5);
 #main{
 width:100%;
 height:100%;
-
 max-height:100%;
 background-image:url('https://static.vecteezy.com/system/resources/previews/007/355/263/non_2x/abstract-green-gradient-with-dynamic-shape-background-free-vector.jpg');
 background-repeat:no-repeat;
@@ -25,19 +25,23 @@ margin:0px;
 background-attachment:fixed;
 overflow-y:auto;
 max-width:100%;
+box-sizing:border-box;
 
 }
 #navbar{
 background-color:#FFE202;
-width:100%;
+width:200px;
 color:black;
-height:45px;
-display:flex;
-flex-direction:row-reverse;
+height:100%;
+flex-direction:column;
 padding:0px;
-gap:0px;
+gap:5px;
 max-width:100%;
 margin-bottom:0px;
+display:none;
+padding-top:45px;
+position:fixed;
+transition-timing-function: ease-in;
 }
 #BODY{
 display:flex;
@@ -46,23 +50,25 @@ background-color:rgba(255,255,255,0);
 color:white;
 height:100%;
 margin:0px;
-flex-direction:row;
+flex-direction:column;
 padding:0px;
 justify-content:space-around;
 max-width:100%;
+box-sizing:border-box;
+
 }
 #name{
-color:black;margin-left:0px;padding:10px;width:40%;padding-left:30px;margin-right:150px;}
+color:black;margin-left:0px;padding:10px;margin-top:0px;width:30%;font-size:95%;box-sizing:border-box;}
 #bdivs1{
-width:100%;max-height:100%;
+width:100%;
+max-height:100%;
 display:flex;
 flex-direction:column;
 margin:0px;
 justify-content:space-around;
-
 max-width:100%;
 align-items:center;
- 
+box-sizing:border-box;
 
 }
 
@@ -78,7 +84,7 @@ margin-top:-60px;
 }
 .ddivs{
 width:100%;
-height:200px;
+height:15%;
 
 max-width:100%;
 }
@@ -89,6 +95,8 @@ width:100%
 max-width:100%;
 flex-wrap: wrap;
 justify-content:space-around;
+box-sizing:border-box;
+margin:0px;
 
 
 }
@@ -112,45 +120,66 @@ display:flex;
 flex-direction:row;
 padding-top:20px;
 padding-bottom:20px;
-margin-top:100px;
-margin-bottom:-40px;
+box-sizing:border-box;
+
 max-width:100%;
 width:100%;
 
 
 }
+.link{
+text-decoration:none;
+}
 
 
 </style>
 </HEAD>
-<BODY id="main"><DIV id="navbar">
-<DIV class="divs"><a href="C:\Data\Learning\website\Finaltestimonials.html">Review</a></DIV>
-<DIV class="divs" ><a href="C:\Data\Learning\website\all About Me.html">About_Me</a></DIV>
-<DIV class="divs"><a href="C:\Data\Learning\website\MYprojects.html">My projects</a></DIV>
-<DIV class="divs"><a href="C:\Data\Learning\website\Myskills2.html">My skills</a></DIV>
-<DIV class="divs"><a href="C:\Data\Learning\website\co-curiculars.html">Co-curriculars</a></DIV>
-<DIV class="divs"><a href="C:\Data\Learning\website\index3.html">Home</a></DIV>
-
-<DIV id="name">PALAK PRAJAPATI</DIV>
-</DIV>
+<BODY id="main">
+<div id="ed" onclick="showmenu()" style="display:flex;flex-direction:row;box-sizing:border-box;height:3%">
+<i class="fa fa-bars" aria-hidden="true" style="color:black;margin:10px;" ></i><DIV id="name">PALAK PRAJAPATI</DIV></diV>
 <DIV id="BODY">
+
+<DIV id="navbar">
+<i class="fa fa-chevron-circle-left" aria-hidden="true" style="padding:10px" onclick="hidemenu()"></i>
+<DIV class="divs"><a class="link" href="Finaltestimonials.html">Review</a></DIV>
+<DIV class="divs" ><a class="link" href="all About Me.html">About Me</a></DIV>
+<DIV class="divs"><a class="link" href="MYprojects.html">My projects</a></DIV>
+<DIV class="divs"><a class="link" href="Myskills2.html">My skills</a></DIV>
+<DIV class="divs"><a class="link" href="co-curiculars.html">Co-curriculars</a></DIV>
+<DIV class="divs"><a class="link" href="index.html">Home</a></DIV>
+
+</DIV>
 <DIV id="bdivs1">
-<DIV class="ddivs" style="color:black;margin-top:45px;margin-bottom:100px;text-align:center;"><P style="font-size:60px;">HELLO,</P><BR>
- <p style="margin-top:-50px;font-size:25px;">I AM <I><B>PALAK PRAJAPATI</B></I>,<BR>
+
+<DIV class="ddivs" style="color:black;text-align:center;padding:0px;"><P style="font-size:90%;">HELLO,<BR>
+ I AM <I><B>PALAK PRAJAPATI</B></I>,<BR>
 STUDENT AT SARDAR VALLABHBHAI NATIONAL INSTITUTE OF TECHNOLOGY,<BR>ELECTRICAL ENGINEERING, 2ND YEAR.</p></DIV>
 <DIV id="container2">
-<a href="C:\Data\Learning\website\all About Me.html"><DIV class="ddivs1" style="color:black;background-color:rgba(255,255,255,0.42);">About me</DIV></a>
-<a href="C:\Data\Learning\website\MYprojects.html"><DIV class="ddivs1" style="color:black;background-color:rgba(255,255,255,0.42);">My projects</DIV></a>
+<a class="link" href="all About Me.html"><DIV class="ddivs1" style="color:black;background-color:rgba(255,255,255,0.42);">About me</DIV></a>
+<a class="link" href="MYprojects.html"><DIV class="ddivs1" style="color:black;background-color:rgba(255,255,255,0.42);">My projects</DIV></a>
 
-<a href="C:\Data\Learning\website\Myskills2.html"><DIV class="ddivs1" style="color:black;background-color:rgba(255,255,255,0.42);">My skills</DIV></a>
-<a href="C:\Data\Learning\website\co-curiculars.html"><DIV class="ddivs1" style="color:black;background-color:rgba(255,255,255,0.42);">Co-curiculars</DIV></a>
-<a href="C:\Data\Learning\website\Finaltestimonials.html"><DIV class="ddivs1" style="color:black;background-color:rgba(255,255,255,0.42);">Testimonials</DIV></a>
+<a class="link" href="Myskills2.html"><DIV class="ddivs1" style="color:black;background-color:rgba(255,255,255,0.42);">My skills</DIV></a>
+<a  class="link"href="co-curiculars.html"><DIV class="ddivs1" style="color:black;background-color:rgba(255,255,255,0.42);">Co-curiculars</DIV></a>
+<a  class="link" href="Finaltestimonials.html"><DIV class="ddivs1" style="color:black;background-color:rgba(255,255,255,0.42);">Testimonials</DIV></a>
 
 
 
 </DIV >
+
 </DIV>
+
+
 </DIV>
-<DIV id="contact" style="margin-top:10%;">Email:palak.jp.prajapatiXXgmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ph:87938935XX &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/palak-prajapati-94bb58297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa fa-linkedin-square" aria-hidden="true" style=";margin-right:10px;color:white;"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/palakprajapati750?igsh=eTN0cDM3ZmwyZnhv"><i class="fa fa-instagram" aria-hidden="true" style="margin-right:10px;color:white;"></i></a></DIV>
+<DIV id="contact" >Email:palak.jp.prajapatiXXgmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ph:87938935XX &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/palak-prajapati-94bb58297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa fa-linkedin-square" aria-hidden="true" style=";margin-right:10px;color:white;"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/palakprajapati750?igsh=eTN0cDM3ZmwyZnhv"><i class="fa fa-instagram" aria-hidden="true" style="margin-right:10px;color:white;"></i></a></DIV>
+<script>
+  function showmenu()
+  {
+    document.getElementById("navbar").style.display = "block"; 
+  }
+  function hidemenu()
+  {
+    document.getElementById("navbar").style.display = "none"; 
+  }
+</script>
 </BODY>
 </HTML>
